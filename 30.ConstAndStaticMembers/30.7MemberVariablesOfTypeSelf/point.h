@@ -32,6 +32,7 @@ public :
   //static inline const Point m_point3{}; // Incomplete type compiler error
 
   Point* p_m_point4; // Works
+  Point& ref_m_point5;
 
   static const Point m_point4;
   static Point m_point5;

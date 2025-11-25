@@ -4,7 +4,7 @@
 const Point Point::m_point4 {4,5};
 Point Point::m_point5 {3,8};
 
-  Point::Point(double x, double y) :p_m_point4{nullptr}, m_x{x},m_y{y}{
+  Point::Point(double x, double y) :p_m_point4{nullptr}, ref_m_point5(*this), m_x{x},m_y{y}{
     std::cout << "Point constructor called" << std::endl;
     ++m_point_count;
   }

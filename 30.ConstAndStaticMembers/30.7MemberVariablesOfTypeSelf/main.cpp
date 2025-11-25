@@ -7,6 +7,7 @@ int main(){
     p1.initialize_pointer(10,10);
 
     p1.m_point4.print_info();
+    p1.ref_m_point5.print_info();
 
 
 

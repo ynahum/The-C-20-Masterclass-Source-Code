@@ -22,10 +22,13 @@ int main(){
 
     print_point(point1);
 
-    auto [a,b] = point1;
+    auto [a, b] = point1;
+    auto& [c,d] = point1;
 
     std::cout << "a : " << a << std::endl;
     std::cout << "b : " << b << std::endl;
+    std::cout << "c : " << c << std::endl;
+    std::cout << "d : " << d << std::endl;
 
     point1.x = 44.1;
     point1.y = 55.2;
@@ -34,6 +37,8 @@ int main(){
 
     std::cout << "a : " << a << std::endl;
     std::cout << "b : " << b << std::endl;
+    std::cout << "c : " << c << std::endl;
+    std::cout << "d : " << d << std::endl;
 
     auto func = [=](){
         std::cout << "a (captured) : " << a << std::endl;
