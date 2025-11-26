@@ -1,3 +1,4 @@
+#include "some_header.hpp"
 #include <iostream>
 
 //No linkage
@@ -26,11 +27,17 @@ int main(){
 
     */
 
+#if 0
     std::cout << "item_count(main) : " << item_count << " &item_count : "
         << &item_count << std::endl;
 
     std::cout << "-----" << std::endl;
     print_item_count();
+#endif
+    std::cout << "some_const_var(main) : " << some_const_var << " &some_const_var: "
+        << &some_const_var << std::endl;
+    std::cout << "-----" << std::endl;
+    print_some_const_var();
 
    
     

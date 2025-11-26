@@ -1,3 +1,4 @@
+#include "some_header.hpp"
 #include <iostream>
 
 const double distance{}; // Declaration and definition
@@ -15,5 +16,10 @@ void print_distance(){
 void print_item_count(){
     std::cout << "item_count(other_file) : " << item_count << " &item_count : "
         << &item_count << std::endl;
+}
+
+void print_some_const_var() {
+    std::cout << "some_const_var(other_file) : " << some_const_var << " &some_const_var : "
+        << &some_const_var << std::endl;
 }
 
